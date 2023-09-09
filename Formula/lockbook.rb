@@ -1,4 +1,3 @@
-
 class Lockbook < Formula
   desc "The private, polished note-taking platform."
   homepage "https://github.com/lockbook/lockbook"
@@ -7,6 +6,7 @@ class Lockbook < Formula
   version "0.8.0"
 
   def install
+    generate_completions_from_executable(bin/"lockbook", "completions fish", shells: [:fish], shell_parameter_format: :none)
     bin.install "lockbook"
   end
 end
