@@ -6,7 +6,7 @@ class Lockbook < Formula
   version "0.8.0"
 
   def install
-    generate_completions_from_executable(bin/"lockbook", "completions fish", shells: [:fish], shell_parameter_format: :none)
     bin.install "lockbook"
+    generate_completions_from_executable(bin/"lockbook", "completions")
   end
 end
