@@ -11,7 +11,7 @@ class Lockbook < Formula
   end
   def caveats
     <<~EOS
-      If you haven't already, enable completions for things installed by brew: https://docs.brew.sh/Shell-Completion
+      If you haven't already, enable completions for things installed by brew: #{Formatter.url("https://docs.brew.sh/Shell-Completion")}
     EOS
   end
 end
