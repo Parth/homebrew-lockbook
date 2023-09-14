@@ -9,4 +9,9 @@ class Lockbook < Formula
     bin.install "lockbook"
     generate_completions_from_executable(bin/"lockbook", "completions")
   end
+  def caveats
+    <<~EOS
+      If you haven't already, enable completions for things installed by brew: https://docs.brew.sh/Shell-Completion
+    EOS
+  end
 end
